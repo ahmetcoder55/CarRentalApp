@@ -1,7 +1,10 @@
-﻿namespace CarRentalApp.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CarRentalApp.Models
 {
     public class Rental
     {
+        [Key]
         public int Id { get; set; }
         public int CarId { get; set; }
         public Car Car { get; set; } // İlişkisel tablo (Navigation Property)
